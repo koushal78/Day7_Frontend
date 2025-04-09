@@ -9,7 +9,7 @@ const View = () => {
   }, []);
 
   const viewdata = async () => {
-    const res = await axios.get('http://localhost:9000/users');
+    const res = await axios.get('backend-three-tau-76.vercel.app/users');
     setUsers(res.data);
   };
 

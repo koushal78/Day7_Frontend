@@ -5,7 +5,7 @@ const Delete = () => {
   const handleDelete = async (e) => {
     e.preventDefault();
     const id = e.target.id.value;
-    await axios.delete(`http://localhost:9000/users/${id}`);
+    await axios.delete(`backend-three-tau-76.vercel.app/users/${id}`);
     alert('Product deleted');
     e.target.reset();
   };
